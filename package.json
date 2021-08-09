@@ -1,7 +1,7 @@
 {
   "name": "first-app",
   "version": "0.1.0",
-  "description": "Atividade de Autoração Multimídia 2: Criando uma aplicação Web com Node.js , Express e EJS",
+  "description": "Aplicação base em node.js",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,22 +10,23 @@
     "type": "git",
     "url": "git+https://github.com/pameladecfo/first-app.git"
   },
-  "author": "Pam",
-  "license": "ISC",
+  "author": "Pâmela de Castro F. Oliveira",
+  "license": "GPL-3.0",
   "bugs": {
     "url": "https://github.com/pameladecfo/first-app/issues"
   },
   "homepage": "https://github.com/pameladecfo/first-app#readme",
   "dependencies": {
+    "ejs": "^3.1.6",
     "express": "^4.17.1",
+    "express-ejs-layouts": "^2.5.1",
     "faker": "^5.5.3"
   },
   "devDependencies": {},
   "keywords": [
-    "Aplicação",
-    "para",
-    "cadastro",
-    "de",
-    "usuários"
+    "node.js",
+    "express",
+    "ejs",
+    "express-ejs-layout"
   ]
 }
