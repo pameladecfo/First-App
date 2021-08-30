@@ -1,5 +1,6 @@
-  
-body{
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html{
     font-family: 'Montserrat', sans-serif;
 }
 .show{
@@ -8,3 +9,49 @@ body{
 .hidden{
     display:none;
 }
+
+.copyleft {
+    display:inline-block;
+    transform: rotate(180deg);
+  }
+
+/* CSS da NavBar e Footer */
+  .navbar-brand{
+      margin-right: 42rem;
+      font-size: 30px;
+      padding: .5rem 1rem;
+  }
+
+  .bg-warning {
+    background-color: #FD943A!important;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255,255,255);
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-size: 18px;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    background-color: #eb8831;
+    color:wheat;
+}
+
+.bg-info {
+    background-color: teal!important;
+}
+
+.navbar {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+     padding-left: 5rem;
+    }
+
