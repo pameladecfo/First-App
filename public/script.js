@@ -9,17 +9,10 @@ function validaUpdate(data){
 
     for(i = 0; i<5;i++){   
         if (data[i].value == "" || data[i].value == null){
-            alert("Os campos de dados de usuário não podem estar vazios.")
+            alert("Os campos de dados não podem estar vazios.")
             data[i].focus();
             return false;
         }
-    }
-
-    if(data[1].value.indexOf("@") == -1 ||
-    data[1].value.indexOf(".") == -1) {
-        alert("Esse e-mail é inválido.");
-        data[1].focus();
-        return false;
     }
 
     if (!Number.isInteger(Number(data[3].value))&&(Number(data[3].value>0))){
@@ -169,7 +162,7 @@ function update(index,link){
             // baseado nos valores acima apresentados, o codigo abaixo mostra o que foi enviado pelo servidor como resposta ao envio de dados. No caso, se o request foi finalizado e o response foi recebido, a mensagem recebida do servidor eh mostrada no console do navegador. esse codigo foi feito apenas para verificar se tudo ocorreu bem no envio
 
             if (http.readyState === 4 && http.status === 200) { //testa se o envio foi bem sucedido
-                alert('Usuário atualizado com sucesso!');
+                alert('Tira atualizada com sucesso!');
                 for(let cont=0;cont<spans.length;cont++){
                     if(spans[cont].className=="hidden"){
                         if (cont==5){
@@ -257,7 +250,7 @@ function remove(index,_ntira,link){ //(index,link)
             listar('/cadastro/list');
 
         } else {
-            console.log(`Erro durante a tentativa de remoção do usuário: ${_ntira}! Código do Erro: ${http.status}`); 
+            console.log(`Erro durante a tentativa de remoção da tira: ${_ntira}! Código do Erro: ${http.status}`); 
         }
         
     }
@@ -311,12 +304,12 @@ function add(form, link){
         http.onload = ()=>{
             
             if (http.readyState === 4 && http.status === 200) {
-                alert("Usuário adicionado com sucesso!");
+                alert("Tira adicionada com sucesso!");
                 //chamada de função de listagem de usuários na segunda tabela
                 listar('/cadastro/list');
     
             } else {
-                console.log(`Erro durante a tentativa de adição do usuário: ${_ntira}! Código do Erro: ${http.status}`); 
+                console.log(`Erro durante a tentativa de adição da tira: ${_ntira}! Código do Erro: ${http.status}`); 
             }
             
     
@@ -391,7 +384,7 @@ function listar(link){
             populateTable(tb, lista);
             return lista;
         } else {
-            console.log(`Erro durante a tentativa de remoção do usuário: ${_ntira}! Código do Erro: ${http.status}`); 
+            console.log(`Erro durante a tentativa de remoção da tira: ${_ntira}! Código do Erro: ${http.status}`); 
         }
         
 

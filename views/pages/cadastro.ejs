@@ -80,7 +80,7 @@
         
                                 <td data-index-row="<%=index%>">
                                     <span  class="show"><%= users[index].ntira %></span>
-                                    <input type="text" name="ntira"  class="hidden" value="<%= users[index].ntira %>">
+                                    <input type="number" name="ntira"  class="hidden" value="<%= users[index].ntira %>">
                                 </td>
                                 <td data-index-row="<%=index%>">
                                     <span  class="show"><%= users[index].keyword %></span>
@@ -92,7 +92,7 @@
                                 </td>
                                 <td data-index-row="<%=index%>">
                                     <span  class="show"><%= users[index].date %></span>
-                                    <input type="number" name="date"  min="1" max="100" step="1" class="hidden" value="<%= users[index].date %>">
+                                    <input type="month" name="date" class="hidden" value="<%= users[index].date %>">
         
                                 </td>
         
@@ -111,7 +111,6 @@
         
                                 <!-- para passar parametros para uma rota criada basta usar o delimitador "/" entre os valores dos parametros e defini-los no arquivo de rotas usando ":" para separar cada valor, seguido de um nome que identificarar esse valor. Exemplo: /cadastro/remove/:id -->
                                 <td  data-index-row="<%= index %>">
-                                    <!-- <a href="#" class="show" onclick="remove('<%=index %>','<%=linkRemove%>')"><i class="fas fa-trash-alt"></i></a> -->
                                     <a href="#" class="show" onclick="remove('<%=index %>','<%=users[index].ntira %>','<%=linkRemove%>')"><i class="fas fa-trash-alt"></i></a>
                                 </td>
         
