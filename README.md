@@ -4,7 +4,7 @@ Software criado para discutir os conceitos de criação de uma aplicação Web u
 
 ## Autores
 Wellington Wagner F. Sarmento
-Pâmela de Castro Freitas Oliveira
+e Pâmela de Castro Freitas Oliveira
 
 ## Licença
 
