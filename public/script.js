@@ -14,15 +14,7 @@ function validaUpdate(data){
             return false;
         }
     }
-
-    if (!Number.isInteger(Number(data[3].value))&&(Number(data[3].value>0))){
-        alert("A idade deve ser um valor inteiro e positivo!");
-        data[3].focus();
-        return false;
-    }
     return true;
-    
-    
 }
 
 //Essa função recebe um objeto com os dados de cadastro de usuário. Valida um a um e caso haja algum erro
