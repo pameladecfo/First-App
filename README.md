@@ -15,11 +15,11 @@ A criação da aplicação foi inspirada nos seguintes códigos:
 • Como base para a criação das funções específicas de listagem e adição de novas tiras no sistema, foi utilizado o código do Mattheus Del Vianple. O link do GitHub com o código pode ser acessado por intermédio do link a seguir: https://github.com/NovoVerso/AM2/tree/master/first-app2-main.
 
 ## Iniciando a Aplicação
-1)Baixe o código a partir desse repositório
-2)Tenha o Node.js instalado em sua máquina
-3)Abra o código em uma ferramenta de sua preferência (como o VScode)
-4)Insira no terminal da ferramenta de versionamento de código de sua escolha o comando: npm install
-5)Após os módulos do Node.js serem carregados, insira o comando: node index.js
-6)Abra uma aba no seu navegador, digite localhost:3030, e interaja com a aplicação.
+• 1)Baixe o código a partir desse repositório
+• 2)Tenha o Node.js instalado em sua máquina
+• 3)Abra o código em uma ferramenta de sua preferência (como o VScode)
+• 4)Insira no terminal da ferramenta de versionamento de código de sua escolha o comando: npm install
+• 5)Após os módulos do Node.js serem carregados, insira o comando: node index.js
+• 6)Abra uma aba no seu navegador, digite localhost:3030, e interaja com a aplicação.
 
 
